@@ -1,4 +1,4 @@
-Simple Recursive functions
+#Simple Recursive functions
 
 Implement the well-known power function in two different new ways. The power function takes two arguments n and k and computes nk. Your implementation only has to work for non-negative integer k. The following is a straightforward implementation of this function:
 

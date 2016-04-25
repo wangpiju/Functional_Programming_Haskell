@@ -18,12 +18,15 @@ b. There is a different approach to calculating the power function uses less com
 Implement this idea as a Haskell function `power2`.  (Hint: Use the standard Haskell functions `even` and/or `odd`)
 
 a.
+```
 power1 :: Int -> Int -> Int
 power1 n k | k < 0 = error "power: negative argument"
 power1 n 0 = 1
 power1 n k = product $ replicate k n
+```
 
 b.
+```
 power2 :: Int -> Int -> Int
 power2 n k | k < 0 = error "power: negative argument"
 power2 n 0 = 1
@@ -31,3 +34,4 @@ power2 n k =
 	if even k 
 	then power2 (n^2) (div k 2)
 	else n * power2 n (k-1)
+```
